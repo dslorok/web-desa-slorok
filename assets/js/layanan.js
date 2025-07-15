@@ -1,6 +1,4 @@
-// Layanan Page JavaScript (dengan fungsionalitas modal)
-
-let allServices = []; // Variabel global untuk menyimpan data semua layanan
+let allServices = []; 
 
 function hideLoading() {
   const loadingElement = document.getElementById("loading");
@@ -45,7 +43,7 @@ async function loadServicesContent() {
   try {
     const servicesData = await loadJSON("data/services.json");
     if (servicesData) {
-      allServices = servicesData.services; // Simpan data layanan secara global
+      allServices = servicesData.services; 
       populateServicesInfo(allServices);
       populateServiceTypes(servicesData.serviceTypes);
     }
@@ -62,11 +60,9 @@ function populateServicesInfo(services) {
   services.forEach((service) => {
     const serviceElement = document.createElement("div");
 
-    // Mengubah kelas untuk layout flexbox, tidak lagi text-center
     serviceElement.className =
       "bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer flex items-center space-x-6";
 
-    // Mengubah struktur HTML internal untuk layout logo di kiri
     serviceElement.innerHTML = `
       <div class="flex-shrink-0">
         <i class="${service.icon} text-4xl text-primary-600 dark:text-primary-400"></i>
@@ -78,7 +74,6 @@ function populateServicesInfo(services) {
       </div>
     `;
 
-    // Tambahkan event listener untuk memanggil fungsi showServiceDetail
     serviceElement.addEventListener("click", () => {
       showServiceDetail(service.id);
     });
@@ -94,6 +89,14 @@ function showServiceDetail(serviceId) {
   const modal = document.createElement("div");
   modal.className = "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4";
 
+  const whatsappNumber = "6285607006122"; 
+  const message = `== Perihal Meminta ${service.title} ==
+
+Halo Admin Dukcapil Slorok, Saya (...) ingin meminta pembuatan ${service.title}
+
+Terima kasih..`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   modal.innerHTML = `
     <div class="bg-white dark:bg-gray-900 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
       <div class="p-6 md:p-8">
@@ -105,6 +108,14 @@ function showServiceDetail(serviceId) {
         
         <div class="prose dark:prose-invert max-w-none">
           ${service.flowContent}
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <a href="${whatsappLink}" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800">
+             <i class="fab fa-whatsapp mr-2"></i>
+             Chat Call Center ${service.title}
+          </a>
         </div>
 
       </div>

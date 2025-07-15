@@ -5,91 +5,91 @@
       "title": "Surat Keterangan",
       "icon": "fas fa-file-alt",
       "description": "Pengurusan berbagai surat keterangan seperti domisili, tidak mampu, usaha, dll.",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-pengantar-pernikahan",
       "title": "Surat Pengantar Pernikahan",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-pengantar-perceraian",
       "title": "Surat Pengantar Perceraian",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"       
     },
     {
       "id": "surat-pengantar-skck",
       "title": "Surat Pengantar SKCK",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"      
     },
     {
       "id": "surat-keterangan-hubungan-keluarga",
       "title": "Surat Keterangan Hubungan Keluarga",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-keterangan-kelahiran",
       "title": "Surat Keterangan Kelahiran",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
       {
       "id": "surat-keterangan-kematian",
       "title": "Surat Keterangan Kematian",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-keterangan-domisili-usaha",
       "title": "Surat Keterangan Domisili Usaha",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"    
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-izin-keluarga",
       "title": "Surat Izin Keluarga",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": "<h4>Alur Pengajuan Surat Pengantar SKCK</h4><ol class='list-decimal list-inside space-y-3 mt-2 text-gray-600 dark:text-gray-300'><li><b>Pemohon ke RT/RW:</b> Minta surat pengantar dari RT/RW setempat.</li><li><b>Datang ke Kantor Desa:</b> Bawa surat pengantar dari RT/RW, fotocopy KTP, dan fotocopy KK ke loket pelayanan desa.</li><li><b>Verifikasi Petugas:</b> Petugas desa akan memverifikasi kelengkapan dan keabsahan dokumen Anda.</li><li><b>Penerbitan Surat:</b> Jika lengkap, petugas akan membuatkan Surat Pengantar SKCK dan ditandatangani oleh Kepala Desa. Surat bisa langsung dibawa.</li><li><b>Lanjut ke Polsek/Polres:</b> Bawa surat pengantar dari desa beserta dokumen lainnya ke Polsek atau Polres untuk proses pembuatan SKCK.</li></ol>"     
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>" 
     },
     {
       "id": "surat-pernyataan-perubahan-biodata",
       "title": "Surat Pernyataan Perubahan Biodata",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": ""      
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"       
     },
     {
       "id": "surat-perubahan-kartu-keluarga",
       "title": "Surat Perubahan Kartu Keluarga",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": ""     
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"      
     },
     {
       "id": "surat-pindah-tempat",
       "title": "Surat Pindah Tempat",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": ""     
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"      
     },
     {
       "id": "surat-keterangan-tidak-mampu",
       "title": "Surat Keterangan Tidak Mampu",
       "icon": "fas fa-file-alt",
       "description": "Lorem ipsum..",
-      "flowContent": ""   
+      "flowContent": "<h4><b>Berkas yang disiapkan:</b></h4><p>Satu dokumen Kartu Keluarga (KK)</p>"    
     }
   ]
   }
