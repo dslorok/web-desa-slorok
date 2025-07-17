@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- BAGIAN 1: LOGIKA INTERFACE (TAB & DARK MODE) ---
+  //  LOGIKA INTERFACE
 
   const buttons = document.querySelectorAll(".tab-button");
   const contents = document.querySelectorAll(".tab-content");
@@ -11,11 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetContent = document.querySelector(targetId);
       if (targetContent) targetContent.classList.remove("hidden");
 
-      // Atur style tombol aktif
       buttons.forEach((btn) => {
-        // Hapus class warna hijau dari SEMUA tombol
         btn.classList.remove("bg-primary-600", "text-white");
-        // Tambahkan class warna standar (putih/abu-abu) ke SEMUA tombol
+
         btn.classList.add(
           "bg-white",
           "dark:bg-gray-700",
@@ -25,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
       });
       button.classList.add("bg-primary-600", "text-white");
-      // Hapus class warna standar dari tombol yang diklik
+
       button.classList.remove(
         "bg-white",
         "dark:bg-gray-700",
@@ -34,13 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "hover:bg-gray-100"
       );
 
-      // PENTING: Panggil ulang observer setiap kali tab diklik
-      // agar animasi bisa berjalan pada konten yang baru ditampilkan.
       observeVisibleContent();
     });
   });
 
-  // --- BAGIAN 2: LOGIKA ANIMASI ANGKA ---
+  // LOGIKA ANIMASI ANGKA ---
 
   const animateNumber = (element) => {
     const target = parseFloat(element.dataset.value);
@@ -62,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.requestAnimationFrame(step);
   };
 
-  // --- BAGIAN 3: KONFIGURASI DAN PEMBUATAN GRAFIK (CHART) ---
+  // KONFIGURASI DAN PEMBUATAN GRAFIK (CHART) ---
 
-  let renderedCharts = {}; // Objek untuk melacak chart yang sudah dirender
+  let renderedCharts = {};
 
   const createChart = (canvasId, config) => {
     if (renderedCharts[canvasId]) return;
@@ -82,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return "Rp " + value;
   };
 
-  // Data bersama untuk grafik
   const chartData = {
     years: ["2018", "2019", "2020", "2021", "2022"],
     colors: {
@@ -96,9 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  // Pusat konfigurasi untuk SEMUA chart
+  // Chart Logic
   const chartConfigs = {
-    // --- Chart dari skrip Anda sebelumnya ---
     peternakanChart: {
       type: "bar",
       data: {
@@ -201,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scales: {
           y: {
             beginAtZero: true,
-            max: 150, // <-- PERUBAHAN ADA DI SINI
+            max: 150,
           },
         },
       },
@@ -226,16 +220,16 @@ document.addEventListener("DOMContentLoaded", function () {
             label: "Jumlah Penduduk",
             data: [1800, 1171, 2245, 1706, 1367, 32, 40, 228, 9, 0],
             backgroundColor: [
-              "#BBDEFB", // Biru paling muda
+              "#BBDEFB",
               "#90CAF9",
               "#64B5F6",
               "#42A5F5",
-              "#2196F3", // Biru tengah
+              "#2196F3",
               "#1E88E5",
               "#1976D2",
               "#1565C0",
               "#0D47A1",
-              "#0A3882", // Biru paling tua
+              "#0A3882",
             ],
             borderRadius: 5,
           },
@@ -249,13 +243,12 @@ document.addEventListener("DOMContentLoaded", function () {
         scales: {
           y: {
             beginAtZero: true,
-            max: 2500, // <-- PERUBAHAN ADA DI SINI
+            max: 2500,
           },
         },
       },
     },
 
-    // === PENAMBAHAN KONFIGURASI CHART APBD DESA ===
     pendapatanDetailChart: {
       type: "bar",
       data: {
@@ -290,7 +283,6 @@ document.addEventListener("DOMContentLoaded", function () {
     belanjaDetailChart: {
       type: "bar",
       data: {
-        // Label kembali menjadi 1 baris karena akan ditampilkan secara vertikal
         labels: [
           "Penyelenggaraan Pemerintahan Desa",
           "Pelaksanaan Pembangunan Desa",
@@ -314,14 +306,13 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
       },
       options: {
-        indexAxis: "y", // <-- Kunci utama: Mengubah grafik menjadi horizontal
+        indexAxis: "y",
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
         },
         scales: {
-          // Skala X (horizontal) sekarang untuk nilai uang
           x: {
             beginAtZero: true,
             ticks: {
@@ -333,21 +324,20 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  // --- BAGIAN 4: LOGIKA ANIMASI SAAT SCROLL (OBSERVER) ---
+  // LOGIKA ANIMASI SAAT SCROLL
 
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Animasikan angka jika elemen memiliki kelas .animate-number
           if (entry.target.classList.contains("animate-number")) {
             animateNumber(entry.target);
           }
-          // Buat grafik jika elemen adalah canvas dengan ID yang ada di konfigurasi
+
           if (chartConfigs[entry.target.id]) {
             createChart(entry.target.id, chartConfigs[entry.target.id]);
           }
-          // Hentikan pengamatan setelah elemen dianimasikan
+
           observerInstance.unobserve(entry.target);
         }
       });
@@ -356,7 +346,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   const observeVisibleContent = () => {
-    // Amati semua elemen yang perlu dianimasikan di dalam tab yang sedang aktif
     document
       .querySelectorAll(
         ".tab-content:not(.hidden) .animate-number, .tab-content:not(.hidden) canvas"
@@ -366,6 +355,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   };
 
-  // Jalankan observer pertama kali untuk konten yang aktif saat halaman dimuat
   observeVisibleContent();
 });

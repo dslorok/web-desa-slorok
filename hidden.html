@@ -1,11 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About - MMD FILKOM 18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-brown': '#8B4513',
+                        'light-brown': '#D2B48C',
+                        'cream': '#F5F5DC',
+                        'coffee': '#6F4E37',
+                        'mocha': '#C7A882'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'scale-in': 'scaleIn 0.5s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(139, 69, 19, 0.15);
+        }
+        
+        .section-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .section-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #F5F5DC 0%, #D2B48C 50%, #C7A882 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #8B4513, #6F4E37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
 </head>
-<body>
-    <h1>hidden page</h1>
+<body class="bg-cream min-h-screen">
+    <!-- Header Section -->
+    <header class="gradient-bg py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-gradient mb-8 animate-fade-in">
+                MMD FILKOM 18
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12 animate-slide-up">
+    <!-- Team Photo 1 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 1" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 2 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 0.2s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 2" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 3 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 0.4s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 3" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 4 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 0.6s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 4" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 5 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 0.8s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 5" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 6 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 1s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 6" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 7 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 1.2s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 7" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    
+    <!-- Team Photo 8 -->
+    <div class="relative group">
+        <div class="w-full h-32 md:h-40 bg-white rounded-xl shadow-lg overflow-hidden animate-float transform transition-all duration-300 hover:scale-105" style="animation-delay: 1.4s;">
+            <img src="/placeholder.svg?height=160&width=240" alt="Team Member 8" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-coffee/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+</div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto section-animate">
+            <h2 class="text-4xl font-bold text-coffee text-center mb-12">Tentang Kami</h2>
+            <div class="bg-gradient-to-r from-cream to-light-brown p-8 rounded-2xl shadow-xl">
+                <p class="text-lg text-warm-brown leading-relaxed text-center mb-6">
+                    MMD FILKOM 18 adalah tim yang berdedikasi untuk menciptakan solusi digital inovatif. 
+                    Kami terdiri dari mahasiswa-mahasiswa berbakat dari Fakultas Ilmu Komputer yang 
+                    berkomitmen untuk mengembangkan teknologi yang bermanfaat bagi masyarakat.
+                </p>
+                <p class="text-lg text-warm-brown leading-relaxed text-center">
+                    Dengan semangat kolaborasi dan inovasi, kami bekerja sama untuk mewujudkan 
+                    visi digital yang dapat memberikan dampak positif bagi lingkungan sekitar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="py-16 px-4 bg-gradient-to-b from-white to-cream">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-coffee text-center mb-16 section-animate">Tim Kami</h2>
+            
+            <!-- Product Team -->
+            <div class="mb-16 section-animate">
+                <h3 class="text-2xl font-semibold text-warm-brown text-center mb-8">Tim Product</h3>
+                <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Product Manager" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Product Manager</h4>
+                        <p class="text-warm-brown text-center text-sm">Product Manager</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Product Analyst" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Product Analyst</h4>
+                        <p class="text-warm-brown text-center text-sm">Product Analyst</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI Team -->
+            <div class="mb-16 section-animate">
+                <h3 class="text-2xl font-semibold text-warm-brown text-center mb-8">Tim UI</h3>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="UI Designer 1" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama UI Designer 1</h4>
+                        <p class="text-warm-brown text-center text-sm">UI/UX Designer</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="UI Designer 2" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama UI Designer 2</h4>
+                        <p class="text-warm-brown text-center text-sm">UI/UX Designer</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="UI Designer 3" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama UI Designer 3</h4>
+                        <p class="text-warm-brown text-center text-sm">UI/UX Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer Team -->
+            <div class="mb-16 section-animate">
+                <h3 class="text-2xl font-semibold text-warm-brown text-center mb-8">Tim Developer</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Developer 1" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Developer 1</h4>
+                        <p class="text-warm-brown text-center text-sm">Frontend Developer</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Developer 2" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Developer 2</h4>
+                        <p class="text-warm-brown text-center text-sm">Backend Developer</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Developer 3" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Developer 3</h4>
+                        <p class="text-warm-brown text-center text-sm">Full Stack Developer</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Developer 4" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Developer 4</h4>
+                        <p class="text-warm-brown text-center text-sm">Mobile Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Auditor Team -->
+            <div class="mb-16 section-animate">
+                <h3 class="text-2xl font-semibold text-warm-brown text-center mb-8">Tim Website Auditor</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Auditor 1" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Auditor 1</h4>
+                        <p class="text-warm-brown text-center text-sm">Security Auditor</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Auditor 2" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Auditor 2</h4>
+                        <p class="text-warm-brown text-center text-sm">Performance Auditor</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Auditor 3" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Auditor 3</h4>
+                        <p class="text-warm-brown text-center text-sm">Quality Auditor</p>
+                    </div>
+                    <div class="team-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-light-brown to-mocha rounded-full overflow-hidden">
+                            <img src="/placeholder.svg?height=80&width=80" alt="Auditor 4" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-lg font-semibold text-coffee text-center mb-2">Nama Auditor 4</h4>
+                        <p class="text-warm-brown text-center text-sm">Accessibility Auditor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-coffee mb-4">MMD FILKOM 18</h3>
+            <p class="text-warm-brown mb-6">Bersama membangun masa depan digital yang lebih baik</p>
+            <div class="flex justify-center space-x-6">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                    <span class="text-coffee font-bold">📧</span>
+                </div>
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                    <span class="text-coffee font-bold">🌐</span>
+                </div>
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                    <span class="text-coffee font-bold">📱</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections with animation
+        document.querySelectorAll('.section-animate').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add stagger animation to team cards
+        document.querySelectorAll('.team-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('animate-scale-in');
+        });
+
+        // Smooth scroll behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
+    </script>
 </body>
 </html>
