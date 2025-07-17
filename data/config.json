@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "Desa Sejahtera",
-    "description": "Website resmi Desa Sejahtera - Desa yang maju, mandiri, dan sejahtera"
+    "title": "Desa Slorok",
+    "description": "Website resmi Desa Slorok - Desa yang maju, mandiri, dan sejahtera"
   },
   "hero": {
-    "title": "Selamat Datang di Desa Sejahtera",
+    "title": "Selamat Datang di Desa Slorok",
     "subtitle": "Desa yang maju, mandiri, dan sejahtera untuk semua warga",
     "backgroundImage": "/placeholder.svg?height=600&width=1200"
   },
@@ -31,7 +31,7 @@
     }
   ],
   "contact": {
-    "address": "Jl. Desa Sejahtera No. 123, Kecamatan Makmur, Kabupaten Sentosa, Provinsi Bahagia 12345",
+    "address": "Jl. Desa Slorok No. 123, Kecamatan Makmur, Kabupaten Sentosa, Provinsi Bahagia 12345",
     "phone": "(021) 1234-5678",
     "email": "info@desasejahtera.id",
     "website": "https://desasejahtera.id",

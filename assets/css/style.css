@@ -106,3 +106,25 @@
     page-break-after: always;
   }
 }
+
+/* Authority slider styles */
+.authority-slider {
+  will-change: transform;
+}
+
+.authority-dot {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.authority-dot:hover {
+  transform: scale(1.2);
+}
+
+.authority-slider img {
+  transition: transform 0.3s ease;
+}
+
+.authority-slider img:hover {
+  transform: scale(1.05);
+}

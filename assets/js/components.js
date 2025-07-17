@@ -7,7 +7,7 @@ function createHeader() {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
                 <div class="flex items-center space-x-3">
                     <img src="/placeholder.svg?height=40&width=40" alt="Logo Desa" class="w-10 h-10 rounded-full">
-                    <span id="brandText" class="text-lg font-semibold text-primary-600 dark:text-primary-400">Desa Sejahtera</span>
+                    <span id="brandText" class="text-lg font-semibold text-primary-600 dark:text-primary-400">Desa Slorok</span>
                 </div>
                 
                 <!-- Navigation Menu -->
@@ -88,7 +88,7 @@ function createFooter() {
                 </div>
 
                 <div class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-gray-600 dark:text-gray-400">
-                    <p>&copy; 2024 Desa Sejahtera. Semua hak dilindungi.</p>
+                    <p>&copy; 2024 Desa Slorok. Semua hak dilindungi.</p>
                 </div>
             </div>
         </div>
