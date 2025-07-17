@@ -56,15 +56,16 @@
   <body
     class="font-poppins bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300"
   >
+    <!-- Header -->
     <header
-      class="fixed top-0 left-0 w-full h-16 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 z-40"
+      class="fixed top-0 left-0 w-full h-16 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 z-40 transition-colors duration-300"
     >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between"
       >
         <div class="flex items-center space-x-3">
           <img
-            src="/placeholder.svg?height=40&width=40"
+            src="assets/img/logo.png"
             alt="Logo Desa"
             class="w-10 h-10 rounded-full"
           />
@@ -73,42 +74,63 @@
             >Desa Slorok</span
           >
         </div>
+
+        <!-- Navigation Menu -->
         <nav class="hidden md:block">
           <ul class="flex space-x-8">
             <li>
               <a
                 href="index.html"
-                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
-                ><i class="fas fa-home"></i><span>Beranda</span></a
+                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"                
               >
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+              </a>
             </li>
             <li>
               <a
                 href="profil.html"
-                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
-                ><i class="fas fa-info-circle"></i><span>Profile Desa</span></a
+                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"
               >
+                <i class="fas fa-info-circle"></i>
+                <span>Profile Desa</span>
+              </a>
             </li>
             <li>
               <a
                 href="infografis.html"
-                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-primary-600 bg-primary-50 dark:bg-primary-900/20"
-                ><i class="fas fa-chart-bar"></i><span>Infografis</span></a
+                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-primary-600 bg-primary-50 dark:bg-primary-900/20 transition-all duration-200"
               >
+                <i class="fas fa-chart-bar"></i>
+                <span>Infografis</span>
+              </a>
             </li>
             <li>
               <a
                 href="layanan.html"
-                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
-                ><i class="fas fa-cogs"></i><span>Layanan</span></a
+                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"
               >
+                <i class="fas fa-cogs"></i>
+                <span>Layanan</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="bumdes.html"
+                class="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"
+              >
+                <i class="fas fa-store"></i>
+                <span>bumdes</span>
+              </a>
             </li>
           </ul>
         </nav>
+
+        <!-- Header Controls -->
         <div class="flex items-center space-x-4">
           <button
             id="darkModeToggle"
-            class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:border-primary-600"
+            class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary-600 hover:border-primary-600 transition-all duration-200"
           >
             <i class="fas fa-moon"></i>
           </button>
@@ -116,12 +138,72 @@
             class="md:hidden w-10 h-10 flex flex-col justify-center items-center space-y-1"
             id="mobileMenuToggle"
           >
-            <span class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300"></span
-            ><span class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300"></span
-            ><span class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300"></span>
+            <span
+              class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"
+            ></span>
+            <span
+              class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"
+            ></span>
+            <span
+              class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"
+            ></span>
           </button>
         </div>
       </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobileMenu"
+        class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+      >
+        <ul class="px-4 py-2 space-y-1">
+          <li>
+            <a
+              href="index.html"
+              class="flex items-center space-x-3 px-3 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+            >
+              <i class="fas fa-home w-5"></i>
+              <span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profil.html"
+              class="flex items-center space-x-3 px-3 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+            >
+              <i class="fas fa-info-circle w-5"></i>
+              <span>Profile Desa</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="infografis.html"
+              class="flex items-center space-x-3 px-3 py-3 rounded-lg text-primary-600 bg-primary-50 dark:bg-primary-900/20 transition-colors duration-200"
+            >
+              <i class="fas fa-chart-bar w-5"></i>
+              <span>Infografis</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="layanan.html"
+              class="flex items-center space-x-3 px-3 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+            >
+              <i class="fas fa-cogs w-5"></i>
+              <span>Layanan</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="bumdes.html"
+              class="flex items-center space-x-3 px-3 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+            >
+              <i class="fas fa-store w-5"></i>
+              <span>Bumdes</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="pt-16 min-h-screen">
